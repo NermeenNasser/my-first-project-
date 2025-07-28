@@ -1,0 +1,142 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  background-color: rgb(247, 246, 245);
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+  font: sans-serif;
+  position: relative;
+  overflow: scroll;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("img/4a8861f122de997c9c1ed2ff057a1937.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: dashed;
+  top: 50px;
+  left: 10px;
+  height: 50px;
+  word-spacing: normal;
+  font: optional;
+  font: 1em sans-serif;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100px;
+  font-style: italic;
+}
+h2 {
+  text-align: center;
+  text-decoration: dashed;
+  top: 50px;
+  left: 10px;
+  height: 50px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  font: optional;
+  font: 1em sans-serif;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-style: italic;
+}
+p {
+  text-align: center;
+  text-decoration: dashed;
+  top: 50px;
+  left: 10px;
+  height: 50px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  font: optional;
+  font: 1em sans-serif;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-style: italic;
+}
+
+
+.navbar {
+  height: 100px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 20px;
+  color: #7e5c5c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.car-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+  
+}
+.car-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(196, 185, 191);
+  border-radius: 12px;
+  box-shadow: (0, 0, 0, 0, 3) rgb;
+  width: 229px;
+}
+
+.car-gallery .car-image {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+
+.car-gallery .car-image:hover {
+opacity: 1;
+transform: scale(1.1);
+}
+button {
+  background-color: rgb(252, 246, 246);
+  color: red;
+  border: 1px solid #e9e1e1;
+  border-radius: 7px;
+  padding: 8px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 5px 0;
+  transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+  background-color: rgb(226, 200, 200);
+  color: rgb(243, 233, 233);  
+}
+.box {
+  color: rgb(26, 25, 25);
+position: fixed;
+background-color: rgb(207, 200, 200);
+bottom: 10px;
+right: 10px;
+font-size: 30px;
+padding: 30px;
+}
